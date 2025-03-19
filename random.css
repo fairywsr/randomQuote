@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+.button{
+    background-color: purple;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 3px;
+}
+
+.button:hover{
+     color: purple;
+     background-color: #fff;
+     border: 2px solid purple;
+}
+
+.image{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid purple;
+    margin: 3px;
+}
+.container{
+    position: relative;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imageContainer, img{
+   height: 400px;
+   width: 700px;
+   border: 2px solid #fff;
+}
+
+.quotecontainer{
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    height: 250px;
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.368);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.quotecontainer p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 900;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.quotecontainer span{
+     font-size: 1.4rem;
+     color: #fff;
+     text-transform: capitalize;
+     font-weight: 900;
+     align-self: flex-end;
+     margin-right: 10px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+  
+  @media screen and (max-width: 600px) {
+    .imageContainer, img{
+        height: 200px;
+        width: 300px;
+        border: 2px solid #fff;
+     }
+     .quotecontainer p{
+        font-size: 0.7rem;
+        color: #fff;
+        font-weight: 900;
+        align-self: center;
+        text-align: center;
+        padding: 5px;
+    }
+    .quotecontainer{
+        position: absolute;
+        bottom: 55%;
+        left: 1%;
+        height: 100px;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.368);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .button{
+        background-color: purple;
+        color: #fff;
+        border: none;
+        font-size: 0.5rem;
+        border-radius: 30px;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+  }
+
